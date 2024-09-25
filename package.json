@@ -1,5 +1,5 @@
 {
-  "name": "svelte-json-tree",
+  "name": "@sveltejs/svelte-json-tree",
   "version": "2.2.0",
   "description": "Svelte JSON Viewer Component",
   "author": "Tan Li Hau <lhtan93@gmail.com>",
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/tanhauhau/svelte-json-tree.git"
+    "url": "https://github.com/sveltejs/svelte-json-tree.git"
   },
   "scripts": {
     "dev": "vite dev",
