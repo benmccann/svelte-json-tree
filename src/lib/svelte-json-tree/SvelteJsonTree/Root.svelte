@@ -27,7 +27,7 @@
   });
 </script>
 
-<div class:expandable>
+<span class:expandable>
   {#if expandable}
     <Expandable key="$" {expanded}>
       <JSONNode {value} />
@@ -37,10 +37,10 @@
   {:else}
     <JSONNode {value} />
   {/if}
-</div>
+</span>
 
 <style>
-  div {
+  span {
     --string-color: var(--json-tree-string-color, #cb3f41);
     --symbol-color: var(--json-tree-symbol-color, #cb3f41);
     --boolean-color: var(--json-tree-boolean-color, #112aa7);
@@ -60,13 +60,13 @@
     font-size: var(--json-tree-font-size, 12px);
     font-family: var(--json-tree-font-family, 'Courier New', Courier, monospace);
   }
-  div :global(li) {
+  span :global(li) {
     line-height: var(--li-line-height);
     display: var(--li-display, list-item);
     list-style: none;
   }
-  div,
-  div :global(ul) {
+  span,
+  span :global(ul) {
     padding: 0;
     margin: 0;
   }
@@ -74,22 +74,22 @@
   .expandable {
     margin-left: var(--li-identation);
   }
-  div {
+  span {
     cursor: default;
   }
-  div :global(.label) {
+  span :global(.label) {
     color: var(--label-color);
   }
-  div :global(.property) {
+  span :global(.property) {
     color: var(--property-color);
   }
-  div :global(.internal) {
+  span :global(.internal) {
     color: var(--internal-color);
   }
-  div :global(.operator) {
+  span :global(.operator) {
     color: var(--operator-color);
   }
-  span {
+  span > span {
     white-space: pre-wrap;
   }
 </style>
