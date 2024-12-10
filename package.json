@@ -73,5 +73,9 @@
     "!dist/**/*.test.*",
     "!dist/**/*.spec.*"
   ],
-  "type": "module"
+  "type": "module",
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "pnpm": "^9.0.0"
+  }
 }
