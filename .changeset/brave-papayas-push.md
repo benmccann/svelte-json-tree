@@ -2,4 +2,4 @@
 '@sveltejs/svelte-json-tree': patch
 ---
 
-Update peer dependency to support Svelte 5.
+fix: update peer dependencies to support Svelte 5
