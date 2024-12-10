@@ -20,6 +20,7 @@
     "build": "vite build && npm run package",
     "build:standalone": "BUILD_MODE=standalone vite build",
     "build:bundled": "BUILD_MODE=bundled vite build",
+    "changeset:publish": "changeset publish",
     "preview": "vite preview",
     "package": "svelte-kit sync && svelte-package -i src/lib/svelte-json-tree -o dist/lib && pnpm build:standalone && pnpm build:bundled && publint",
     "prepublishOnly": "npm run package",
